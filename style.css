@@ -66,7 +66,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    background: red;
+    /* background: red; */
     align-items: center;
     position: fixed;
     width: 1134px;
@@ -93,7 +93,7 @@ nav .logo {
 }
 
 nav ul {
-    background: blue;
+    /* background: blue; */
     display: flex;
     align-items: center;
     gap: 60px;
@@ -112,7 +112,7 @@ nav ul li a {
 /* Hero Section */
 
 .hero-section {
-    background: green;
+    /* background: green; */
     display: flex;
     height: 100vh;
     width: 100%;
@@ -144,12 +144,12 @@ nav ul li a {
 }
 
 .hero-section .left {
-    background: purple;
+    /* background: purple; */
     flex: 1;
 }
 
 .hero-section .right {
-    background: rgb(247, 117, 12);
+    /* background: rgb(247, 117, 12); */
     align-self: flex-end;
 }
 
@@ -254,7 +254,7 @@ section p {
 
 .testimonials-section {
     display: flex;
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
     gap: 100px;
     align-items: center;
 }
@@ -360,7 +360,7 @@ section p {
 }
 
 .courses-section .course-cards {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     gap: 70px;
 }
@@ -425,7 +425,7 @@ section p {
 }
 
 .courses-section .wrapper {
-    background: yellowgreen;
+    /* background: yellowgreen; */
     position: relative;
 }
 
@@ -437,7 +437,7 @@ section p {
 /*  App Section */
 
 .app-section {
-    background: lightgreen;
+    /* background: lightgreen; */
     text-align: center;
 }
 
@@ -544,4 +544,81 @@ footer form .submit-btn {
 
 footer .copyright {
     margin-top: 36px;
+}
+
+/* Tablet Size */
+
+@media (max-width: 1100px) {
+    .btn {
+        padding: 12px 32px;
+    }
+    .wrapper {
+        /* background-color: pink; */
+        padding: 0 100px;
+    }
+
+    nav {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 36px 100px;
+    }
+
+    nav.scrolled {
+        padding: 16px 100px;
+    }
+    header,
+    .hero-section,
+    header .wrapper {
+        max-height: 1100px;
+    }
+
+    .hero-section {
+        /* background-color: lightyellow; */
+        flex-direction: column;
+    }
+
+    .hero-section .left {
+        width: 100%;
+        /* background: lightgreen; */
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-section .left h1 {
+        font-size: 50px;
+        line-height: 125%;
+    }
+
+    .hero-section .left .btn {
+        align-self: flex-start;
+    }
+
+    .hero-section .right {
+        position: absolute;
+        /* background-color: lightseagreen; */
+        bottom: 0;
+    }
+
+    .hero-section .right img {
+        height: 580px;
+    }
+
+    .hero-section .achievement-card {
+        position: relative;
+        margin-bottom: 80px;
+    }
+
+    .achievement-card.achievement-card.students-enrolled,
+    .achievement-card.achievement-card.overall-rating {
+        left: unset;
+        top: unset;
+    }
+
+    .hero-section .achievement-cards {
+        background: blue;
+        align-self: flex-start;
+        margin: 40px;
+    }
 }
