@@ -708,4 +708,15 @@ footer .copyright {
     .courses-section .course-card:last-child {
         margin-bottom: 50px;
     }
+
+    /* Footer */
+
+    footer .links-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .links-container .links:last-child {
+        /* background: lightblue; */
+        grid-column: 1 / 3;
+    }
 }
